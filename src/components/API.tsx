@@ -1,0 +1,5 @@
+export async function fetchCharacters() {
+  const res = await fetch("https://rickandmortyapi.com/api/character?page=1");
+  const data = await res.json();
+  return data.results;
+}
